@@ -1,0 +1,105 @@
+/* COLORS */
+/* rgba(146, 51, 234, 0.801)
+rgba(191, 38, 211, 0.808) */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Orbitron", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.header {
+  position: relative;
+  height: 100vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(146, 51, 234, 0.5),
+      rgba(191, 38, 211, 0.5)
+    ),
+    url(/CSS/img/Homepage-img.jpg);
+  background-size: cover;
+  background-position: top;
+}
+.logo-box {
+  position: absolute;
+  top: 4rem;
+  left: 4rem;
+}
+.logo-img {
+  -webkit-clip-path: circle(50% at 50% 50%);
+  clip-path: circle(39% at 50% 48%);
+  width: 20%;
+}
+.text-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.title {
+  font-size: 5rem;
+  color: #fff;
+  animation: moveToleft 2s ease;
+}
+.subtitle {
+  font-size: 3rem;
+  color: #fff;
+  animation: moveToRight 2s ease;
+}
+.btn-play {
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  border-radius: 10rem;
+  transition: all 0.2s;
+  position: relative;
+  color: #fff;
+  background-color: rgba(146, 51, 234, 0.5);
+  animation: moveToBottom 2s ease;
+  animation-fill-mode: backwards;
+  letter-spacing: 0.5rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.btn-play:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  color: rgba(146, 51, 234, 0.5);
+}
+.btn-play:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.text-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-text {
+  font-family: "Lato", sans-serif;
+  font-size: 1.5rem;
+  color: #fff;
+}
+.text-color {
+  font-family: "Great Vibes", cursive;
+  font-size: 2rem;
+  color: aqua;
+}

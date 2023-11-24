@@ -1,0 +1,112 @@
+/* FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
+
+/* rem and em do not depends on html font-size in media queries!
+Instead, 1em= 1rem = 16px */
+@media (max-width: 50em) {
+  .title {
+    font-size: 3.2rem;
+  }
+  .subtitle {
+    font-size: 2rem;
+  }
+  .btn-play {
+    font-size: 1.4rem;
+    padding: 1rem 2rem;
+  }
+}
+@media (max-width: 55em) {
+  .container-card {
+    width: 17rem;
+  }
+  .footer-text {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 45em) {
+  .container-card {
+    width: 14rem;
+  }
+  /* .Menu-link {
+    animation: none;
+  } */
+}
+@media (max-width: 41rem) {
+  .container-card {
+    width: 12rem;
+  }
+  .container-grid-cards {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 6rem 2rem;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". ."
+      ". .";
+  }
+  .container-btn {
+    left: 40%;
+    bottom: 4%;
+  }
+  .Menu-link {
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+  }
+  .footer-text {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 32em) {
+  .title {
+    font-size: 2.4rem;
+  }
+  .subtitle {
+    font-size: 1.8rem;
+  }
+  .btn-play {
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+  }
+  .menu-link {
+    transform: translateX(-5rem);
+  }
+}
+@media (max-width: 24em) {
+  .title {
+    font-size: 2rem;
+  }
+  .subtitle {
+    font-size: 1.6rem;
+  }
+  .btn-play {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+  .footer-text {
+    font-size: 1.2rem;
+  }
+  .title-game {
+    font-size: 4rem;
+  }
+  .container-card {
+    width: 10rem;
+  }
+}
+@media (max-width: 20em) {
+  .title {
+    font-size: 1.8rem;
+  }
+  .subtitle {
+    font-size: 1.4rem;
+  }
+  .btn-play {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+  .footer-text {
+    font-size: 1rem;
+  }
+  .text-color {
+    font-size: 1.6rem;
+  }
+}
